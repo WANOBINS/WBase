@@ -9,9 +9,11 @@
     <Import_RootNamespace>WBase.Core</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\ByteArray.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IDamageSource.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IHasHealth.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IHealingSource.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)INamed.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\ByteUtil.cs" />
   </ItemGroup>
 </Project>
