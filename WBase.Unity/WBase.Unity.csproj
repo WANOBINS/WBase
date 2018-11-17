@@ -1,19 +1,32 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.3</TargetFramework>
+    <TargetFramework>net46</TargetFramework>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Company>WANOBINS</Company>
     <Authors>DaemonUmbra</Authors>
     <Description>Unity implementations of WBase Core classes.</Description>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath></OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath></OutputPath>
+  </PropertyGroup>
+
+  <Import Project="..\WBase.Core\WBase.Core.projitems" Label="Shared" />
+
   <ItemGroup>
     <Reference Include="UnityEngine">
       <HintPath>E:\Program Files\Unity\Editors\2017.4.15f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>E:\Program Files\Unity\Editors\2017.4.15f1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
     </Reference>
   </ItemGroup>
-
-  <Import Project="..\WBase.Core\WBase.Core.projitems" Label="Shared" />
 
 </Project>
