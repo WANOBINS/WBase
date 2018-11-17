@@ -1,7 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard1.3</TargetFramework>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Authors>DaemonUmbra</Authors>
+    <Company>WANOBINS</Company>
+    <Description>Standalone implementations of WBase Core classes.</Description>
   </PropertyGroup>
+
+  <Import Project="..\WBase.Core\WBase.Core.projitems" Label="Shared" />
 
 </Project>

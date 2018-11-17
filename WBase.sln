@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2048
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "WBase.Core", "WBase.Core\WBase.Core.shproj", "{D1A59D1D-83A0-4C07-8A9C-DA9E3A32FFB9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WBase.Unity", "WBase.Unity\WBase.Unity.csproj", "{ED2A224C-D3E1-4B7E-B025-5B1119B6CF29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WBase.Unity", "WBase.Unity\WBase.Unity.csproj", "{ED2A224C-D3E1-4B7E-B025-5B1119B6CF29}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WBase.Standalone", "WBase.Standalone\WBase.Standalone.csproj", "{C20F0A0A-6BDB-4F43-9A70-1FF10C17681C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WBase.Standalone", "WBase.Standalone\WBase.Standalone.csproj", "{C20F0A0A-6BDB-4F43-9A70-1FF10C17681C}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "WBase.Core", "WBase.Core\WBase.Core.shproj", "{28444962-6EFD-4ADB-B2D7-C310E611BE42}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		WBase.Core\WBase.Core.projitems*{d1a59d1d-83a0-4c07-8a9c-da9e3a32ffb9}*SharedItemsImports = 13
+		WBase.Core\WBase.Core.projitems*{28444962-6efd-4adb-b2d7-c310e611be42}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

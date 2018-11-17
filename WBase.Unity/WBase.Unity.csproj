@@ -1,7 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard1.3</TargetFramework>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Company>WANOBINS</Company>
+    <Authors>DaemonUmbra</Authors>
+    <Description>Unity implementations of WBase Core classes.</Description>
   </PropertyGroup>
 
   <ItemGroup>
@@ -9,5 +13,7 @@
       <HintPath>E:\Program Files\Unity\Editors\2017.4.15f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
   </ItemGroup>
+
+  <Import Project="..\WBase.Core\WBase.Core.projitems" Label="Shared" />
 
 </Project>

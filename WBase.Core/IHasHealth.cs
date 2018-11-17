@@ -4,10 +4,12 @@ using System.Text;
 
 namespace WBase.Core
 {
-    interface IHasHealth
+    public interface IHasHealth
     {
-        double Health { get; }
-        void ApplyDamage(float DamageAmount);
-        void ApplyHealing(float HealingAmount);
+        float Health { get; }
+        void ApplyHealing(IHealingSource healingSource, float healingAmount);
+        void ApplyHealing(float healingAmount);
+        void ApplyDamage(IDamageSource damageSource, float damageAmount);
+        void AppleDamage(float damageSource);
     }
 }
