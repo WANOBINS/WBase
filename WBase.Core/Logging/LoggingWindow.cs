@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace WBase.Core
+namespace WBase.Core.Logging
 {
-    public interface IDamageSource
+    class LoggingWindow
     {
+
     }
 }
