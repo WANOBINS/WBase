@@ -13,15 +13,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="LaunchArgs\" />
+    <Compile Remove="LaunchArgs\**" />
+    <EmbeddedResource Remove="LaunchArgs\**" />
+    <None Remove="LaunchArgs\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Logging\ILogger.cs.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>ILogger.cs.tt</DependentUpon>
-    </Compile>
     <Compile Update="Properties\LoggingResources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
