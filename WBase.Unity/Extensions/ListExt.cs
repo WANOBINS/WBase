@@ -23,5 +23,18 @@ namespace WBase.Unity.Extensions
                 }
             }
         }
+
+        public static GameObject GetClosestTo(this List<GameObject> GameObjects, Vector3 Position)
+        {
+            GameObject Closest = null;
+            foreach (GameObject go in GameObjects)
+            {
+                if (Closest == null || (go.transform.position - Position).magnitude < (Closest.transform.position - Position).magnitude)
+                {
+                    Closest = go;
+                }
+            }
+            return Closest;
+        }
     }
 }
